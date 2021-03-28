@@ -20,11 +20,11 @@ from src.detection import *
 
 
 def main():
-    parase = args_process()
-    if parase:
-        print(parase)
-        if parase.command == "detection":
-            detection_msi()
+    paras = args_process()
+    if paras:
+        print(paras)
+        if paras.command == "detection":
+            detection_msi(paras)
 
     pass
 
