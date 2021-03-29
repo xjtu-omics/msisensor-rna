@@ -1,7 +1,5 @@
 # MSIsensor-RNA
-MSIsensor-RNA is a member of MSIsensor family for MSI detection using RNA sequencing data. MSIsensor-RNA
- capture the signature of the expression of MSI associated genes.  
-
+MSIsensor-RNA is a member of MSIsensor family for microsatellite instability (MSI) detection using RNA sequencing data. MSIsensor-RNA compute MSI by the expression of MSI associated genes. MSIsensor-RNA shows efficient performance in AUC, sensitivity, specificity and robustness. 
 
 ## License
 
@@ -12,20 +10,16 @@ Xi’an Jiaotong University. For more information, please contact with
 Peng Jia (pengjia@stu.xjtu.edu.cn) or Kai Ye (kaiye@xjtu.edu.cn).
 
 
-
-
-## General introduction
-
-MSIsensor-RNA is a new member of MSIsensor family, which compute MSI status with RNA sequencing data.
-
 ## Scopes of MSIsensor-RNA
+
+Microsatellite Instability is an indispensable biomarker in cancer therapies and prognosis, particularly in immunotherapy. Our previous work for MSI detection based on next-generation-sequencing data, MSIsensor and [MSIsensor-pro](https://github.com/xjtu-omics/msisensor-pro), are widely used in clinical research projects. In particular, MSIsensor is the chosen MSI scoring method in the first FDA-approved pan cancer panel, MSK-IMPACT. However, most of those DNA-based methods, including MSIsensor and MSIsensor-pro, quantify MSI evaluation of genome mutations as consequence of MSI status rather than the direct cause of MSI, the deficiency of mismatch repair (MMR) system. In addition, selection of detected microsatellite sites and thresholds for different populations, sequencing panels and cancer types impedes the standardized detection of MSI in clinical. To solve these problems, we launched a new member for MSIsensor family, MSIsensor-RNA, a standalone software for MSI detection with MMR associated genes from tumor RNA sequencing data. MSIsensor-RNA shows efficient performance in AUC, sensitivity, specificity and robustness. MSIsensor-RNA also costs less in aspect of sequencing and computation, and does not need selection of microsatellite sites and threshold for different populations compared to the NGS-based methods, including MSIsensor and MSIsensor-pro.
 
 
 
 ## How to install MSIsensor-RNA?
-    ```
+  ```
     pip3 install msisensor-rna
-    ```
+  ```
  
 ## How to use MSI ? 
 
@@ -35,23 +29,23 @@ MSIsensor-RNA is a new member of MSIsensor family, which compute MSI status with
 
 ### Key Commands:
 
-* **scan**
+* **train**
 	  
       scan the reference genome to get microsatellites information
 
-* **baseline**
+* **show**
 
 	   build baseline for tumor only detection
 
-* **msi**
+* **detection**
 
 	   evaluate MSI using paired tumor-normal sequencing data
 
-* **pro**
 
-	   evaluate MSI using single (tumor) sample sequencing data 
 
-See more detail in the **[Key Commands](https://github.com/xjtu-omics/MSIsensor-RNA/wiki/Key-Commands)** page and **[Best Practices](https://github.com/xjtu-omics/MSIsensor-RNA/wiki/Best-Practices)** page.
+### input and output.
+
+tdb
 
 
 
