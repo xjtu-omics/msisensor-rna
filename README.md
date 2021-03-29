@@ -3,16 +3,7 @@ MSIsensor-RNA is a member of MSIsensor family for MSI detection using RNA sequen
  capture the signature of the expression of MSI associated genes.  
 
 
-
-
-# Contact
-
-If you want to apply the MSIsensor-RNA to commercial purposes, 
-please contact Peng Jia (pengjia@stu.xjtu.edu.cn) or 
-Kai Ye (kaiye@xjtu.edu.cn) for a license
-and get more services.
-
-# License
+## License
 
 MSIsensor-RNA is free for non-commercial use
 by academic, government, and non-profit/not-for-profit institutions. A
@@ -23,20 +14,20 @@ Peng Jia (pengjia@stu.xjtu.edu.cn) or Kai Ye (kaiye@xjtu.edu.cn).
 
 
 
-# General introduction
+## General introduction
 
 MSIsensor-RNA is a new member of MSIsensor family, which compute MSI status with RNA sequencing data.
 
-# Scopes of MSIsensor-RNA
+## Scopes of MSIsensor-RNA
 
 
 
-# How to install MSIsensor-RNA?
+## How to install MSIsensor-RNA?
     ```
     pip3 install msisensor-rna
     ```
  
-# How to use MSI ? 
+## How to use MSI ? 
 
 ### Usage:   
    
@@ -64,7 +55,7 @@ See more detail in the **[Key Commands](https://github.com/xjtu-omics/MSIsensor-
 
 
 
-# Contact
+## Contact
 
 If you have any questions, please contact with Peng Jia (pengjia@stu.xjtu.edu.cn) or Kai Ye (kaiye@xjtu.edu.cn).
 
