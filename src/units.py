@@ -19,7 +19,7 @@ consoleHandler.setFormatter(formatter)
 logger.addHandler(consoleHandler)
 
 default_general = {
-    "version": "0.1.0",
+    "version": "0.1.3",
     "name": "msisensor-rna",
     "description": "Microsatellite Instability (MSI) detection with RNA sequencing data.",
     "author": "Peng Jia, Xuanhao Yang et al.",
