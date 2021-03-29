@@ -49,17 +49,9 @@ def args_process():
                                   help="The path of output file prefix [required]")
     parser_detection.add_argument('-m', '--model', required=True, type=str, nargs=1,
                                   help="The path of the microsatellite regions [required]")
-    parser_detection.add_argument("-c", "--custom", required=False, type=bool, nargs=1,
-                                  choices=[True, False], default=[False],
-                                  help="Use custom model, default value [False].")
-    parser_detection.add_argument("-cm", "--custom_model", type=str, nargs=1, default=["."],
-                                  help="Path of custom model, required if --custom=True.")
-    parser_detection.add_argument("-t", "--cancer_type", required=False, type=str, nargs=1,
-                                  choices=["CRC", "STAD", "UCEC"], default=["CRC"],
-                                  help="Cancer type of the sample.")
+    parser_detection.add_argument('-d', '--run_directly', required=False, type=bool, default=[False], nargs=1,
+                                  help="Run the program directly without any Confirm. [default=False]")
 
-    # parser_detection.add_argument('-r', '--reference', required=True, type=str, nargs=1,
-    #                               help="The path of reference file [required]")
     commands_parser["detection"] = parser_detection
     ###################################################################################################################
     # command train
@@ -76,13 +68,37 @@ def args_process():
     parser_train.add_argument('-c', '--classifier', required=False, type=str, nargs=1, default=["RandomForest"],
                               choices=["RandomForest", "LogisticRegression", "MLPClassifier", "GaussianNB",
                                        "AdaBoostClassifier"],
-                              help="The machine learning classifier for MSI detection.")
+                              help="The machine learning classifier for MSI detection. [default=RandomForest]")
     parser_train.add_argument('-di', '--input_description', required=False, type=str, nargs=1, default=["."],
-                              help="The description of the input file!")
-    parser_train.add_argument("-dm", "--model_description. ", required=False, type=str, nargs=1,
-                              default=[""],
-                              help="Description for this trained model!")
+                              help="The description of the input file.")
+    parser_train.add_argument("-dm", "--model_description", required=False, type=str, nargs=1,
+                              default=["."],
+                              help="Description for this trained model.")
+    parser_train.add_argument("-p", "--positive_num", required=False, type=int, nargs=1,
+                              default=[10],
+                              help="The minimum  positive sample of MSI for training. [default=10]")
     commands_parser["train"] = parser_train
+
+    ###################################################################################################################
+    # command train
+    parser_show = subparsers.add_parser('show', help='Show the information of the model and add more details.')
+    parser_show.description = 'Show the information of the model and add more details.'
+    commands.append("show")
+
+    parser_show.add_argument('-m', '--model', required=True, type=str, nargs=1,
+                             help="The trained model path. [required]")
+    parser_show.add_argument("-t", "--cancer_type", required=False, type=str, nargs=1, default=["."],
+                             help="Rename the cancer type. e.g. CRC, STAD, PanCancer etc. ")
+    parser_show.add_argument('-di', '--input_description', required=False, type=str, nargs=1, default=["."],
+                             help="Add description for the input file.")
+    parser_show.add_argument("-dm", "--model_description", required=False, type=str, nargs=1,
+                             default=["."],
+                             help="Add description for this trained model.")
+    parser_show.add_argument("-g", "--gene_list", required=False, type=str, nargs=1,
+                             default=["."],
+                             help="The path for the genes must be included for this model.")
+
+    commands_parser["show"] = parser_show
 
     if len(os.sys.argv) < 2:
         parser.print_help()
@@ -100,8 +116,6 @@ def args_process():
         logger.error("Command Error! " + os.sys.argv[1] +
                      " is not the available command.\n"
                      "[Tips] Please input correct command such as " + ", ".join(commands) + "!")
-        # parser.print_help()
-        # parser.parse_args()
         return False
     if len(os.sys.argv) == 2 and (os.sys.argv[1] in commands):
         commands_parser[os.sys.argv[1]].print_help()

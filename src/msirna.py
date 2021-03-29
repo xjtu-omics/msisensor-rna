@@ -18,16 +18,19 @@ sys.path.append(os.path.dirname(curpath))
 from src.paras import *
 from src.detection import detection_msi
 from src.train import train_model
+from src.show import show_model
 
 
 def main():
     paras = args_process()
     if paras:
-        print(paras)
+        # print(paras)
         if paras.command == "detection":
             detection_msi(paras)
-        elif paras.command == "detection":
+        elif paras.command == "train":
             train_model(paras)
+        elif paras.command == "show":
+            show_model(paras)
 
     pass
 
