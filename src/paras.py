@@ -77,6 +77,12 @@ def args_process():
     parser_train.add_argument("-p", "--positive_num", required=False, type=int, nargs=1,
                               default=[10],
                               help="The minimum  positive sample of MSI for training. [default=10]")
+    parser_train.add_argument("-a", "--author", required=False, type=str, nargs=1,
+                              default=["."],
+                              help="The author who trained the model.")
+    parser_train.add_argument("-e", "--email", required=False, type=str, nargs=1,
+                              default=["."],
+                              help="The email of the author.")
     commands_parser["train"] = parser_train
 
     ###################################################################################################################

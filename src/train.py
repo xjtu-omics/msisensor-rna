@@ -52,6 +52,8 @@ def train_model(paras):
     input_description = paras.input_description[0]
     model_description = paras.model_description[0]
     positive_num = paras.positive_num[0]
+    author = paras.author[0]
+    email = paras.email[0]
 
     input_df = pd.read_csv(input, index_col=0).dropna()
     genes = input_df.columns.to_list()
@@ -97,6 +99,8 @@ def train_model(paras):
     description["Specificity"] = specificity
     description["Precision"] = precision
     description["Model Path"] = os.path.abspath(model_path)
+    description["Author"] = os.path.abspath(author)
+    description["Email"] = os.path.abspath(email)
     for item, value in description.items():
         logger.info(item + ": {}".format(value))
     with open(model_path, 'wb') as f:
