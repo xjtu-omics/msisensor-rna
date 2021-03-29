@@ -16,7 +16,8 @@ curpath = os.path.abspath(os.path.dirname(sys.argv[0]))
 sys.path.append(os.path.dirname(curpath))
 
 from src.paras import *
-from src.detection import *
+from src.detection import detection_msi
+from src.train import train_model
 
 
 def main():
@@ -25,6 +26,8 @@ def main():
         print(paras)
         if paras.command == "detection":
             detection_msi(paras)
+        elif paras.command == "detection":
+            train_model(paras)
 
     pass
 
