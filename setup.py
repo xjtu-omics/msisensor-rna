@@ -21,7 +21,7 @@ setup(
     author_email=default_general["contact"],
     license='Custom License',
     keywords='Microsatellite instability, RNA-seq, Immunotherapy, Tumor only ',
-    packages=['src'],
+    packages=['msisensor'],
     install_requires=['pandas>=1.0', "numpy>=1.16",
                       "scikit-learn>=0.24", "imbalanced-learn>=0.8.0"],
     python_requires='>=3.6',
