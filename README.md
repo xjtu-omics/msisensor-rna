@@ -1,3 +1,15 @@
+
+![GitHub last commit](https://img.shields.io/github/last-commit/xjtu-omics/msisensor-rna)
+[![GitHub Release Date](https://img.shields.io/github/release-date/xjtu-omics/msisensor-rna)](https://github.com/xjtu-omics/msisensor-rna/releases)
+[![GitHub release (latest SemVer including pre-releases)](https://img.shields.io/github/v/release/xjtu-omics/msisensor-rna?include_prereleases)](https://github.com/xjtu-omics/msisensor-rna/releases)
+[![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/pengjia1110/msisensor-rna)](https://hub.docker.com/repository/docker/pengjia1110/msisensor-rna)
+![Docker Pulls](https://img.shields.io/docker/pulls/pengjia1110/msisensor-rna)
+![GitHub all releases](https://img.shields.io/github/downloads/xjtu-omics/msisensor-rna/total?label="Github")
+
+![PyPI](https://img.shields.io/pypi/v/msisensor-rna) 
+
+
+
 # MSIsensor-RNA
 MSIsensor-RNA is a member of MSIsensor family for microsatellite instability (MSI) detection using RNA sequencing data. MSIsensor-RNA compute MSI by the expression of MSI associated genes. MSIsensor-RNA shows efficient performance in AUC, sensitivity, specificity and robustness. 
 

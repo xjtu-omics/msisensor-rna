@@ -10,7 +10,7 @@
 =============================================================================="""
 from setuptools import setup
 
-from src.units import default_general
+from msisensor.units import default_general
 
 setup(
     name=default_general["name"],
@@ -25,5 +25,5 @@ setup(
     install_requires=['pandas>=1.0', "numpy>=1.16",
                       "scikit-learn>=0.24", "imbalanced-learn>=0.8.0"],
     python_requires='>=3.6',
-    entry_points={'console_scripts': ['msisensor-rna = src.msisensor:main']},
+    entry_points={'console_scripts': ['msisensor-rna = msisensor.msisensor:main']},
 )
