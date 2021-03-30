@@ -25,28 +25,50 @@ Microsatellite Instability is an indispensable biomarker in cancer therapies and
 
 ### Usage:   
    
-      MSIsensor-RNA <command> [options]
+      msisensor-rna <command> [options]
 
 ### Key Commands:
 
-* **train**
+#### **train**
 	  
-      scan the reference genome to get microsatellites information
+   * **Function**. Train custom model for microsatellite instability detection.
+   * **Parameters**     
+   	```  
+	 -h, --help            show this help message and exit  
+	  -i INPUT, --input INPUT  
+				The path of input file. [required]  
+	  -m MODEL, --model MODEL  
+				The trained model of the input file. [required]
+	  -t CANCER_TYPE, --cancer_type CANCER_TYPE
+				The cancer type for this training. e.g. CRC, STAD, and PanCancer etc.
+	  -c {RandomForest,LogisticRegression,MLPClassifier,GaussianNB,AdaBoostClassifier}, --classifier {RandomForest,LogisticRegression,MLPClassifier,GaussianNB,AdaBoostClassifier}
+				The machine learning classifier for MSI detection.				[default=RandomForest]
+	  -di INPUT_DESCRIPTION, --input_description INPUT_DESCRIPTION
+				The description of the input file.
+	  -dm MODEL_DESCRIPTION, --model_description MODEL_DESCRIPTION
+				Description for this trained model.
+	  -p POSITIVE_NUM, --positive_num POSITIVE_NUM
+				The minimum positive sample of MSI for training.
+				[default=10]
+	  -a AUTHOR, --author AUTHOR
+				The author who trained the model.
+	  -e EMAIL, --email EMAIL
+				The email of the author.
 
-* **show**
+	```
 
-	   build baseline for tumor only detection
+#### **show**
 
-* **detection**
+    Show the information of the model and add more details.
 
-	   evaluate MSI using paired tumor-normal sequencing data
+#### **detection**
 
+	Microsatellite instability detection.
 
 
 ### input and output.
 
 tdb
-
 
 
 ## Contact
