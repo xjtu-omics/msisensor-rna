@@ -17,15 +17,18 @@ Microsatellite Instability is an indispensable biomarker in cancer therapies and
 
 
 ## How to install MSIsensor-RNA?
-  ```
+  ```shell script
+    conda create -n myenv python>=3.6
+    conda activate myenv
     pip3 install msisensor-rna
   ```
  
 ## How to use MSI ? 
 
 ### Usage:   
-   
-      msisensor-rna <command> [options]
+   ```shell script
+    msisensor-rna <command> [options]
+```
 
 ### Key Commands:
 
@@ -33,7 +36,7 @@ Microsatellite Instability is an indispensable biomarker in cancer therapies and
 	  
    * **Function**. Train custom model for microsatellite instability detection.
    * **Parameters**     
-    	```  
+    	```
           -h, --help show this help message and exit  
           -i INPUT, --input INPUT  
                     The path of input file. [required]  
