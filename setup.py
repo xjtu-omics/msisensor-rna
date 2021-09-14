@@ -25,5 +25,5 @@ setup(
     install_requires=['pandas>=1.0', "numpy>=1.16",
                       "scikit-learn>=0.24", "imbalanced-learn>=0.8.0"],
     python_requires='>=3.6',
-    entry_points={'console_scripts': ['msisensor_rna-rna = msisensor_rna.msisensor_rna:main']},
+    entry_points={'console_scripts': ['msisensor-rna = msisensor_rna.msisensor_rna:main']},
 )
