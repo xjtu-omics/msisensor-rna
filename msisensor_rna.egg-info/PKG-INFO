@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: msisensor-rna
+Version: 0.1.5
+Summary: msisensor-rna Microsatellite Instability (MSI) detection with RNA sequencing data.
+Home-page: https://github.com/xjtu-omics/msisensor-rna
+Author: Peng Jia, Xuanhao Yang et al.
+Author-email: pengjia@stu.xjtu.edu.cn
+License: Custom License
+Keywords: Microsatellite instability,RNA-seq,Immunotherapy,Tumor only
+Platform: UNKNOWN
+Requires-Python: >=3.6
+License-File: LICENSE
+
+UNKNOWN
+

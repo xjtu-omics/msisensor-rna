@@ -2,7 +2,7 @@
 # -*- coding: UTF-8 -*-
 """==============================================================================
 # Project: MSIRNA
-# Script : msisensor.py
+# Script : msisensor_rna.py
 # Author : Peng Jia
 # Date   : 2021.03.19
 # Email  : pengjia@stu.xjtu.edu.cn

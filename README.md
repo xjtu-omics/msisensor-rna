@@ -59,19 +59,19 @@ methods, including MSIsensor and MSIsensor-pro.
   ```shell script
     conda create -n myenv python>=3.6
     conda activate myenv
-    pip3 install msisensor-rna
+    pip3 install msisensor_rna-rna
   ```
 ### Install with docker   
   ```shell script
-      docker pull pengjia1110/msisensor-rna
-      docker run -v /local/path:/docker/path pengjia1110/msisensor-rna msisensor-rna
+      docker pull pengjia1110/msisensor_rna-rna
+      docker run -v /local/path:/docker/path pengjia1110/msisensor_rna-rna msisensor_rna-rna
   ```
 --- 
 ## How to use MSI ? 
 
 ### Usage:   
    ```shell script
-    msisensor-rna <command> [options]
+    msisensor_rna-rna <command> [options]
 ```
 
 ### Key Commands:

@@ -1,0 +1,3 @@
+[console_scripts]
+msisensor-rna = msisensor.msisensor:main
+
