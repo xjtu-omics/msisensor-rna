@@ -11,7 +11,7 @@
 
 import pickle
 
-from msisensor.units import logger
+from msisensor_rna.units import logger
 
 
 def show_model(paras):

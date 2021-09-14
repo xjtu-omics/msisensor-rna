@@ -10,7 +10,7 @@
 =============================================================================="""
 from setuptools import setup
 
-from msisensor.units import default_general
+from msisensor_rna.units import default_general
 
 setup(
     name=default_general["name"],

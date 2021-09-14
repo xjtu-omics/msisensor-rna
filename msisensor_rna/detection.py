@@ -10,7 +10,7 @@
 =============================================================================="""
 import pickle
 import pandas as pd
-from msisensor.units import logger
+from msisensor_rna.units import logger
 
 
 def detection_msi(paras):

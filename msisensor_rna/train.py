@@ -21,7 +21,7 @@ from sklearn.ensemble import AdaBoostClassifier
 from sklearn.linear_model import LogisticRegression
 from imblearn.over_sampling import RandomOverSampler, SMOTE
 from collections import Counter
-from msisensor.units import logger
+from msisensor_rna.units import logger
 
 
 def build_classrfier(type="RandomForest"):

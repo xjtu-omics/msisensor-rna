@@ -19,7 +19,20 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0a44eb2-80a4-48c5-8110-dbd3ceb426a8" name="Default Changelist" comment="" />
+    <list default="true" id="e0a44eb2-80a4-48c5-8110-dbd3ceb426a8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/msisensor_rna.egg-info/PKG-INFO" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/msisensor_rna.egg-info/SOURCES.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/msisensor_rna.egg-info/dependency_links.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/msisensor_rna.egg-info/entry_points.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/msisensor_rna.egg-info/requires.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/msisensor_rna.egg-info/top_level.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/msisensor_rna/detection.py" beforeDir="false" afterPath="$PROJECT_DIR$/msisensor_rna/detection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msisensor_rna/msisensor.py" beforeDir="false" afterPath="$PROJECT_DIR$/msisensor_rna/msisensor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msisensor_rna/paras.py" beforeDir="false" afterPath="$PROJECT_DIR$/msisensor_rna/paras.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msisensor_rna/show.py" beforeDir="false" afterPath="$PROJECT_DIR$/msisensor_rna/show.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msisensor_rna/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/msisensor_rna/train.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -101,7 +114,7 @@
       <workItem from="1618292136562" duration="684000" />
       <workItem from="1626335420916" duration="750000" />
       <workItem from="1626410617261" duration="593000" />
-      <workItem from="1631588754875" duration="1670000" />
+      <workItem from="1631588754875" duration="2499000" />
     </task>
     <servers />
   </component>
