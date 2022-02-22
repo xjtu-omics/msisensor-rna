@@ -2,11 +2,11 @@
 # -*- coding: UTF-8 -*-
 """==============================================================================
 # Project: msisensor_rna-rna
-# Script : setup.py.py
+# Script : setup.py
 # Author : Peng Jia
 # Date   : 2021.03.29
 # Email  : pengjia@stu.xjtu.edu.cn
-# Description: TODO
+# Description: setup.py for project building.
 =============================================================================="""
 from setuptools import setup
 
