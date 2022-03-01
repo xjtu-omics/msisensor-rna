@@ -6,7 +6,7 @@
 # Author : Peng Jia
 # Date   : 2021.03.19
 # Email  : pengjia@stu.xjtu.edu.cn
-# Description: TODO
+# Description: MSIsensor-RNA Project
 =============================================================================="""
 import sys
 import os
