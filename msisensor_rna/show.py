@@ -6,7 +6,7 @@
 # Author : Peng Jia
 # Date   : 2021.03.29
 # Email  : pengjia@stu.xjtu.edu.cn
-# Description: TODO
+# Description: Show the details of the model.
 =============================================================================="""
 
 import pickle
