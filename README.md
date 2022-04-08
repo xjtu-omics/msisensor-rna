@@ -59,7 +59,7 @@ methods, including MSIsensor and MSIsensor-pro.
   ```shell script
     conda create -n myenv python>=3.6
     conda activate myenv
-    pip3 install msisensor_rna-rna
+    pip3 install msisensor-rna
   ```
 ### Install with docker   
   ```shell script
