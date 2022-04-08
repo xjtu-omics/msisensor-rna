@@ -6,7 +6,7 @@
 # Author : Peng Jia
 # Date   : 2021.03.22
 # Email  : pengjia@stu.xjtu.edu.cn
-# Description: TODO
+# Description: MSI detection with trained model
 =============================================================================="""
 import pickle
 import pandas as pd
