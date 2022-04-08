@@ -90,7 +90,7 @@ methods, including MSIsensor and MSIsensor-pro.
       -t CANCER_TYPE, --cancer_type CANCER_TYPE
                             The cancer type for this training. e.g. CRC, STAD,
                             PanCancer etc.
-      -c {RandomForest,LogisticRegression,MLPClassifier,GaussianNB,AdaBoostClassifier}, --classifier {RandomForest,LogisticRegression,MLPClassifier,GaussianNB,AdaBoostClassifier}
+      -c {SVM,RandomForest,LogisticRegression,MLPClassifier,GaussianNB,AdaBoostClassifier}, --classifier {SVM,RandomForest,LogisticRegression,MLPClassifier,GaussianNB,AdaBoostClassifier}
                             The machine learning classifier for MSI detection.
                             [default = RandomForest]
       -di INPUT_DESCRIPTION, --input_description INPUT_DESCRIPTION
@@ -191,6 +191,9 @@ methods, including MSIsensor and MSIsensor-pro.
     | CA100|9.960|0.920|...|5.002|
   
 ---
+
+## Attention 
+* If you train your own model, the number of MSI-H samples must be greater than 6. 
 
 ## Contact
 
