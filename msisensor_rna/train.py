@@ -6,7 +6,7 @@
 # Author : Peng Jia
 # Date   : 2021.03.28
 # Email  : pengjia@stu.xjtu.edu.cn
-# Description: TODO
+# Description: Train a machine learning model for MSI detection
 =============================================================================="""
 import os
 import pandas as pd
