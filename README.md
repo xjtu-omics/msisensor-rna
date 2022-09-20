@@ -64,7 +64,7 @@ methods, including MSIsensor and MSIsensor-pro.
 ### Install with docker   
   ```shell script
       docker pull pengjia1110/msisensor-rna:latest
-      docker run -v /local/path:/docker/path pengjia1110/msisensor_rna-rna msisensor_rna-rna
+      docker run -v /local/path:/docker/path pengjia1110/msisensor-rna:latest msisensor-rna
   ```
 --- 
 ## How to use MSI ? 
