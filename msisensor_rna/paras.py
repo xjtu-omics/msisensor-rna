@@ -65,8 +65,8 @@ def args_process():
                               help="The trained model of the input file. [required]")
     parser_train.add_argument("-t", "--cancer_type", required=True, type=str, nargs=1,
                               help="The cancer type for this training. e.g. CRC, STAD, PanCancer etc.")
-    parser_train.add_argument('-c', '--classifier', required=False, type=str, nargs=1, default=["RandomForest"],
-                              choices=["RandomForest", "LogisticRegression", "MLPClassifier", "GaussianNB",
+    parser_train.add_argument('-c', '--classifier', required=False, type=str, nargs=1, default=["SVM"],
+                              choices=["SVM", "RandomForest", "LogisticRegression", "MLPClassifier", "GaussianNB",
                                        "AdaBoostClassifier"],
                               help="The machine learning classifier for MSI detection. [default = RandomForest]")
     parser_train.add_argument('-di', '--input_description', required=False, type=str, nargs=1, default=["."],
