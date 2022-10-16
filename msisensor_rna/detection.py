@@ -46,7 +46,7 @@ def detection_msi(paras):
     output_file = open(output_path, "w")
     output_file.write("sample_id,msi_status,probability_of_MSI-H\n")
     for sample, msi, msi_pro in zip(x_name, y_pre, y_pre_pro):
-        output_file.write("{sample},{msi},{msi_pro}\n".format(sample=sample, msi="MSI-H" if msi == 1 else "MSI",
+        output_file.write("{sample},{msi},{msi_pro}\n".format(sample=sample, msi="MSI-H" if msi == 1 else "MSS",
                                                               msi_pro=round(msi_pro, 4)))
     output_file.close()
     logger.info("Finished!")
