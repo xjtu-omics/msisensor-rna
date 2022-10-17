@@ -64,7 +64,12 @@ def train_model(paras):
     class_num = Counter(y_label)
     if class_num[1] < positive_num:
         logger.error("The No. of MSI sample lower than the minimum values, Please set with -p.")
-    x = input_df[genes]
+    input_matrix = input_df[genes]
+    input_matrix_norm = pd.DataFrame(columns=input_matrix.columns)
+    for sample, info in input_matrix.iterrows():
+        input_matrix_norm.loc[sample] = (info - info.mean()) / info.std()
+    x = input_matrix_norm
+
     smo = SMOTE(random_state=1)
     x_balanced, y_label_balanced = smo.fit_resample(x, y_label)
     classifier = build_classrfier(type=classifier_name)

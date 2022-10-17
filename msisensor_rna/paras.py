@@ -68,7 +68,7 @@ def args_process():
     parser_train.add_argument('-c', '--classifier', required=False, type=str, nargs=1, default=["SVM"],
                               choices=["SVM", "RandomForest", "LogisticRegression", "MLPClassifier", "GaussianNB",
                                        "AdaBoostClassifier"],
-                              help="The machine learning classifier for MSI detection. [default = RandomForest]")
+                              help="The machine learning classifier for MSI detection. [default = SVM]")
     parser_train.add_argument('-di', '--input_description', required=False, type=str, nargs=1, default=["."],
                               help="The description of the input file. [default = None]")
     parser_train.add_argument("-dm", "--model_description", required=False, type=str, nargs=1,

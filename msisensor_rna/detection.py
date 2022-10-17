@@ -39,7 +39,12 @@ def detection_msi(paras):
         logger.error("Please provide the fallowing genes' expression!")
         print(",".join(set(genes) - set(genes_this)))
         exit()
-    x = df_input[genes]
+    input_matrix    = df_input[genes]
+
+    input_matrix_norm = pd.DataFrame(columns=input_matrix.columns)
+    for sample, info in input_matrix.iterrows():
+        input_matrix_norm.loc[sample] = (info - info.mean()) / info.std()
+    x=input_matrix_norm
     x_name = df_input.index.to_list()
     y_pre = classifier.predict(x)
     y_pre_pro = classifier.predict_proba(x)[:, 1]
