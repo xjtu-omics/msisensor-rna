@@ -27,7 +27,7 @@ from msisensor_rna.units import logger
 def build_classrfier(type="RandomForest"):
     random_state = np.random.RandomState(1)
     if type == "SVM":
-        classifier = svm.SVC(kernel='linear', probability=True,
+        classifier =  svm.SVR(C=0.1, kernel="sigmoid",probability=True,
                              random_state=random_state)
     elif type == "LogisticRegression":
         classifier = LogisticRegression(C=1.0, penalty='l1', tol=0.0001, solver='saga')
