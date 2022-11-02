@@ -27,8 +27,9 @@ from msisensor_rna.units import logger
 def build_classrfier(type="RandomForest"):
     random_state = np.random.RandomState(1)
     if type == "SVM":
-        classifier =  svm.SVR(C=0.1, kernel="sigmoid",probability=True,
-                             random_state=random_state)
+        # classifier = svm.SVR(C=0.1, kernel="sigmoid", )
+        classifier = svm.SVC(random_state=random_state, probability=True, C=0.2)
+
     elif type == "LogisticRegression":
         classifier = LogisticRegression(C=1.0, penalty='l1', tol=0.0001, solver='saga')
     elif type == "MLPClassifier":
@@ -60,7 +61,7 @@ def train_model(paras):
     genes.remove("msi")
     msi_status = input_df["msi"].to_list()
     # print(msi_status)
-    y_label = [1 if i.upper() in ["MSI", "MSI-H", "MSI_H"] else 0 for i in msi_status]
+    y_label = [1 if f"{i}".upper() in ["MSI", "MSI-H", "MSI_H","1"] else 0 for i in msi_status]
     class_num = Counter(y_label)
     if class_num[1] < positive_num:
         logger.error("The No. of MSI sample lower than the minimum values, Please set with -p.")
