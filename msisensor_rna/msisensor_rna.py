@@ -19,6 +19,8 @@ from msisensor_rna.paras import *
 from msisensor_rna.detection import detection_msi
 from msisensor_rna.train import train_model
 from msisensor_rna.show import show_model
+from msisensor_rna.genes import select_genes
+
 
 
 def main():
@@ -31,6 +33,8 @@ def main():
             train_model(paras)
         elif paras.command == "show":
             show_model(paras)
+        elif paras.command == "genes":
+            select_genes(paras)
 
     pass
 
