@@ -72,7 +72,7 @@ methods, including MSIsensor and MSIsensor-pro.
 
 ### Usage:   
    ```shell script
-    msisensor_rna-rna <command> [options]
+    msisensor-rna <command> [options]
 ```
 
 ### Key Commands:
