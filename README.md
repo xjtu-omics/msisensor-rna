@@ -16,6 +16,11 @@
 MSIsensor-RNA is a member of MSIsensor family for microsatellite instability (MSI) detection using RNA expression data including Microarray, RNA-seq, and single RNA-seq (scRNA-seq). MSIsensor-RNA compute MSI by the expression of MSI associated genes. MSIsensor-RNA shows efficient performance in AUC, sensitivity, specificity and robustness. 
 
 ---
+# Citation
+Peng Jia, Xuanhao Yang, Xiaofei Yang, Tingjie Wang, Yu Xu, Kai Ye, MSIsensor-RNA: Microsatellite Instability Detection for Bulk and Single-cell Gene Expression Data, Genomics, Proteomics & Bioinformatics, 2024;, qzae004, https://doi.org/10.1093/gpbjnl/qzae004
+
+
+---
 ## Authors
   * Pengjia (pengjia@stu.xjtu.edu.cn)
   * Xuanhao Yang (xuanhaoyang@stu.xjtu.edu.cn)
