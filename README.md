@@ -20,11 +20,15 @@ MSIsensor-RNA is a member of MSIsensor family for microsatellite instability (MS
 Peng Jia, Xuanhao Yang, Xiaofei Yang, Tingjie Wang, Yu Xu, Kai Ye, MSIsensor-RNA: Microsatellite Instability Detection for Bulk and Single-cell Gene Expression Data, Genomics, Proteomics & Bioinformatics, 2024;, qzae004, https://doi.org/10.1093/gpbjnl/qzae004
 
 
+
+
+
+
 ---
 ## Authors
-  * Pengjia (pengjia@stu.xjtu.edu.cn)
-  * Xuanhao Yang (xuanhaoyang@stu.xjtu.edu.cn)
-  * Xiaofei Yang (xfyang@xjtu.edu.cn)
+  * Pengjia (pengjia@xjtu.edu.cn, pengjia1110@163.com)
+  * Xuanhao Yang 
+  * Xiaofei Yang 
   * Kai Ye (kaiye@xjtu.edu.cn)
  ---
 ## License
