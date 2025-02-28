@@ -5,7 +5,7 @@
 
 ![Docker Pulls](https://img.shields.io/docker/pulls/pengjia1110/msisensor-rna?label="Docker")
 ![GitHub all releases](https://img.shields.io/github/downloads/xjtu-omics/msisensor-rna/total?label="Github")
-
+![GitHub Repo stars](https://img.shields.io/github/stars/xjtu-omics/msisensor-rna)
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/xjtu-omics/msisensor-rna?label=Github)
 ![PyPI](https://img.shields.io/pypi/v/msisensor-rna?label=PyPI) 
 ![Docker Image Version (latest by date)](https://img.shields.io/docker/v/pengjia1110/msisensor-rna?label=Docker)
